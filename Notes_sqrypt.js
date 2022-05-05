@@ -15,7 +15,7 @@ textarea.addEventListener('blur', function() {
             } else {
                 current_status = {edit: false, key: undefined};
             }
-        this.value = ''; // Очищаем окно ввода текста
+        this.value = 'Напишите свою заметку вместо этого:)))'; // Очищаем окно ввода текста, выводим шаблон (можно было бы и пустую строку '', но решил оставить так)
         
         
     } 
@@ -28,7 +28,7 @@ textarea.addEventListener('blur', function() {
             } else {
                 current_status = {edit: true, key: num};
             }
-        this.value = ''; // Очищаем окно ввода текста
+        this.value = 'Напишите свою заметку вместо этого:)))'; // Очищаем окно ввода текста
         
         let li = document.createElement('li'); // Одновременно со списком создаем новый тег li и по клику мыши в textarea открывается содержимое
         li.dataset.num = notes_list.length - 1;
